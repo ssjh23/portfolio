@@ -2,11 +2,23 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+//Component Import
+import About from './screens/About'
+import Skills from './screens/Skills'
+import SideNavbar from './components/SideNavbar'
 
+function App() {
   return (
-    <h1 className='text-3xl font-bold underline'> Hello World! </h1>
+    <BrowserRouter>
+      <div className='grid grid-cols-6'>
+        <SideNavbar/>
+        <About/>
+        <Skills/>
+      </div>
+    </BrowserRouter>
+
   )
 }
 
