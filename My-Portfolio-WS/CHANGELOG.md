@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/ssjh23/portfolio/compare/v0.0.1...v0.0.2) (2022-10-16)
+
+
+### Features
+
+* Added About me and Skills ([952fd47](https://github.com/ssjh23/portfolio/commit/952fd4776a3e7f633e0579aa7d544f79d86c00f4))
+* Added all screens and changed SideNavbar fonts ([4311ec6](https://github.com/ssjh23/portfolio/commit/4311ec647ec6dcade4d986ca912bfd72eb628dbf))
+* Added SideNavBar ([5841c15](https://github.com/ssjh23/portfolio/commit/5841c152a10625384fe7c2f0a3c82c4743777e24))
+* **library:** Added react-router-dom and hashlink ([e919e7c](https://github.com/ssjh23/portfolio/commit/e919e7cbdb7b4ff24e818ffb8333e2a9bf71c265))
+
+
+### Bug Fixes
+
+* Changed fonts of NavBar ([dc95cb5](https://github.com/ssjh23/portfolio/commit/dc95cb53f32310764ea1e47ce24770f5c962793a))
+* Removed max-width on root div ([baf0ff8](https://github.com/ssjh23/portfolio/commit/baf0ff8970f81aec468357660759b6500d9128f1))
+* Removed padding on root div ([d06553d](https://github.com/ssjh23/portfolio/commit/d06553d68a25ba42be78b3fa26b4402f03d233cb))
+* SideNavbar Sticky and fixed component css ([45e3d40](https://github.com/ssjh23/portfolio/commit/45e3d403bf5a258f921796ed2dd477b78fa5e06b))
+* Update README ([35fc366](https://github.com/ssjh23/portfolio/commit/35fc3660f8e79a65206605ea03c1da429d6b68b4))
+
 ### 0.0.1 (2022-10-09)
 
 
