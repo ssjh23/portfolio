@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Intro/>
-      <div className='grid grid-cols-8'>
+      <div className='grid grid-cols-8 snap-y snap-mandatory'>
         <SideNavbar/>
         <About/>
         <Skills/>

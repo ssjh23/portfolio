@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
 import { usePageStore } from "../store"
-import { UseBoundStore } from "zustand"
 
 export default function About () {
     const ref = useRef(null)
@@ -15,12 +14,11 @@ export default function About () {
         if (isInView){
            console.log(currentPage)
            setPage(1)
-        //    console.log(currentPage)
         }
     },[isInView])
     return (
         <motion.div ref={ref}
-            className="bg-slate-800 h-screen col-start-2 col-span-7" 
+            className="bg-slate-800 h-screen col-start-2 col-span-7 snap-start" 
             id="About"
             viewport={{ once:false }}
         >                
