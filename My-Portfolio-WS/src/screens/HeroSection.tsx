@@ -1,7 +1,6 @@
 import { motion, useInView, Variants, useMotionValue, useTransform, animate} from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { HashLink } from "react-router-hash-link"
-import { hand } from "../assets/path"
 import HeroSectionSVG from "../components/HeroSectionSVG"
 import { usePageStore } from "../store"
 
@@ -31,7 +30,7 @@ export default function HeroSection () {
             ref={ref} 
             className="flex bg-slate-800 h-screen snap-start" 
             id="Intro">
-            <div className="flex flex-col ml-80 pl-32 pt-40">
+            <div className="flex flex-col xl:ml-60 2xl:ml-80 pl-32 pt-40">
                 <HeroSectionSVG isSVGCompleted={isSVGAnimationComplete}/>
                 {isSVGCompleted && (
                     <>
