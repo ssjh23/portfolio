@@ -36,7 +36,7 @@ export default function AnimatedHashLink ({ LinkName, id }:Label) {
          <HashLink to= { LinkName }>
             <motion.div
              whileHover={{
-                scale: 1.2,
+                scale: 1.2
              }}
             >
                 <span className="text-teal-400">{id+1}. </span>
