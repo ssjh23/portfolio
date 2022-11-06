@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ssjh23/portfolio/compare/v0.0.2...v0.0.3) (2022-11-06)
+
+
+### Features
+
+* Added Enter transitions for SideNavbar and Added connecting lines between categories ([92297c4](https://github.com/ssjh23/portfolio/commit/92297c4f111fda99c34a2600d56cf90d4f216057))
+* Added SideNavBar links appear only when scolled into view ([b419444](https://github.com/ssjh23/portfolio/commit/b4194444cdc1d8483ab5e0d5db3369eaa2edbae0))
+* Added state management for page nav ([d41d2bb](https://github.com/ssjh23/portfolio/commit/d41d2bbfa537ea0ec5c80c748057ada70dd464ba))
+
 ### [0.0.2](https://github.com/ssjh23/portfolio/compare/v0.0.1...v0.0.2) (2022-10-16)
 
 
