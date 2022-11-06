@@ -17,12 +17,12 @@ export default function SideNavbar () {
             x:0, 
             opacity: 1,
             transition: {
-                duration:2
+                duration:1
             }
         }
     }
     return(
-        <div className="h-screen grid justify-content items-center col-start-1 col-span-1 sticky top-0 z-0 snap-start">
+        <div className="h-screen grid justify-content items-center col-start-1 col-span-1 sticky top-0 z-0 bg-slate-800">
             <div ref={ref}>
                 <motion.div 
                     className="font-shareTechMono flex flex-col gap-2"
