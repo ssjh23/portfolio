@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio-ws",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +10,7 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "framer-motion": "^7.6.1",
     "immer": "^9.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

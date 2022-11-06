@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link'
 import About from './screens/About'
 import Skills from './screens/Skills'
 import SideNavbar from './components/SideNavbar'
-import Intro from './screens/Intro'
+import HeroSection from './screens/HeroSection'
 import Projects from './screens/Projects'
 import Currently from './screens/Currently'
 import Contact from './screens/Contact'
@@ -16,8 +16,9 @@ import Contact from './screens/Contact'
 function App() {
   return (
     <BrowserRouter>
-      <Intro/>
-      <div className='grid grid-cols-8'>
+    <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth'>
+      <HeroSection/>
+      <div className='grid grid-col-7'>
         <SideNavbar/>
         <About/>
         <Skills/>
@@ -25,8 +26,8 @@ function App() {
         <Currently/>
         <Contact/>
       </div>
+    </div>
     </BrowserRouter>
-
   )
 }
 
