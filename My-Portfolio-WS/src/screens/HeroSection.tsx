@@ -1,7 +1,6 @@
 import { motion, useInView, Variants, useMotionValue, useTransform, animate} from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { HashLink } from "react-router-hash-link"
-import { hand } from "../assets/path"
 import HeroSectionSVG from "../components/HeroSectionSVG"
 import { usePageStore } from "../store"
 
@@ -31,7 +30,7 @@ export default function HeroSection () {
             ref={ref} 
             className="flex bg-slate-800 h-screen snap-start" 
             id="Intro">
-            <div className="flex flex-col ml-80 pl-32 pt-40">
+            <div className="flex flex-col xl:ml-60 2xl:ml-80 pl-32 pt-40">
                 <HeroSectionSVG isSVGCompleted={isSVGAnimationComplete}/>
                 {isSVGCompleted && (
                     <>
@@ -41,12 +40,12 @@ export default function HeroSection () {
                             transition={{delay:0.5, duration:0.8}} 
                             className="text-xl font-shareTechMono text-left text-teal-400 mt-6">
                                     Hey, Sean here
-                            </motion.div>
+                        </motion.div>
                         <motion.div 
                         initial={{opacity:0, x:-100}} 
                         animate={{opacity:1, x:0}} 
                         transition={{delay:0.5, duration:0.8}} 
-                        className="text-xl font-Inter text-left text-slate-400 mt-6 w-1/2">
+                        className="text-xl text-left text-slate-400 mt-6 w-1/2">
                                 {/* Hello! My name is Sean Soo and I enjoy making things work with code. Making an Android phone app, working with an Arduino to make a simple RC Robot or building a website, I have tried it all! And 
                                 each experience, good or bad, has made me enjoy appreciate my field more.
                                 <br></br><br></br>"Learn Smart, Learn Fast" is my own personal motto. It is a reminder that in the ever-changing field of Software Engineering, continuous adaptation while maintaining quality is key. True to the cliche, the journey

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ssjh23/portfolio/compare/v0.0.3...v0.0.4) (2022-11-13)
+
+
+### Features
+
+* Added Hero Section Page, SVG Animations and Redirect links and button ([c2c872e](https://github.com/ssjh23/portfolio/commit/c2c872e52cf8470776818bb80f6afbfa34e2da7b))
+* Added placeholder image, content and fixed css ([580b86e](https://github.com/ssjh23/portfolio/commit/580b86e1eb1e99c3330e1ae6799eed22aa7dfaa9))
+* Added Responsive design for hero section ([6a49ad5](https://github.com/ssjh23/portfolio/commit/6a49ad56c56641629484acd415c27dbb49dc55e9))
+* Added Who am I header and sub header ([7cd7884](https://github.com/ssjh23/portfolio/commit/7cd788438075565cfe14cbf5332deb15c30c217f))
+
 ### [0.0.3](https://github.com/ssjh23/portfolio/compare/v0.0.2...v0.0.3) (2022-11-06)
 
 

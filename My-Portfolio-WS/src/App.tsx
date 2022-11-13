@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
     <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth'>
       <HeroSection/>
-      <div className='grid grid-col-7'>
+      <div className='grid grid-cols-7 '>
         <SideNavbar/>
         <About/>
         <Skills/>
