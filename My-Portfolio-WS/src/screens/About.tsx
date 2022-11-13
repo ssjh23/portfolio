@@ -86,7 +86,7 @@ export default function About () {
                     variants={sidebarVariants}
                     >     
                 <img 
-                    className="bg-contain"
+                    className="bg-contain rounded-2xl"
                     src="https://www.landedexperts.com/wp-content/uploads/2019/07/placeholder-m.jpg"
                 >
                 </img>
