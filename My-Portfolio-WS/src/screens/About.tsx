@@ -65,7 +65,7 @@ export default function About () {
                     A little about me
                 </motion.div> 
                 <motion.div 
-                    className="row-start-3 col-start-2 col-span-2 text-xl text-left text-slate-400"
+                    className="row-start-3 col-start-2 col-span-2 xl:text-base 2xl:text-xl text-left text-slate-400"
                     initial={"hidden_opacity"}
                     animate={isInView && "visible_opacity"}
                     variants={sidebarVariants}
@@ -80,7 +80,7 @@ export default function About () {
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
                 <motion.div 
-                    className="grid row-start-3 row-span-3 col-start-4 col-span-3 justify-center items-center px-48"
+                    className="grid row-start-3 row-span-3 col-start-4 col-span-3 justify-center items-center xl:px-32 2xl:px-72"
                     initial={"hidden_x_img"}
                     animate={isInView && "visible_x_img"}
                     variants={sidebarVariants}
