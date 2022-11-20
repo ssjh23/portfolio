@@ -116,7 +116,7 @@ export default function Skills () {
                     </div>
                 </div>
 
-                <div className="row-start-3 col-span-2 gap-2 flex flex-row justify-center mt-8">
+                <div className="row-start-3 col-span-2 gap-2 flex flex-row justify-center">
                     <div className="flex flex-col justify-center">
                         <VueLogo className="w-28 h-28"/>
                         <div className="mt-2 text-slate-400 font-shareTechMono">VueJs</div>
