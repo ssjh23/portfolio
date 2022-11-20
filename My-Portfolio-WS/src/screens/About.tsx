@@ -80,7 +80,7 @@ export default function About () {
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
                 <motion.div 
-                    className="grid row-start-3 row-span-3 col-start-4 col-span-3 justify-center items-center xl:px-32 2xl:px-72"
+                    className="grid row-start-2 row-span-3 col-start-4 col-span-3 justify-center items-center xl:px-32 2xl:px-72"
                     initial={"hidden_x_img"}
                     animate={isInView && "visible_x_img"}
                     variants={sidebarVariants}
