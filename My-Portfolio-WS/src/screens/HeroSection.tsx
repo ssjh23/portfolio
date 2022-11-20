@@ -28,7 +28,7 @@ export default function HeroSection () {
     return (
         <motion.div 
             ref={ref} 
-            className="flex bg-slate-800 h-screen snap-start" 
+            className="flex bg-slate-800 snap-start h-screen" 
             id="Intro">
             <div className="flex flex-col xl:ml-60 2xl:ml-80 pl-32 pt-40">
                 <HeroSectionSVG isSVGCompleted={isSVGAnimationComplete}/>

@@ -17,6 +17,9 @@ import { ReactComponent as GithubLogo} from "../assets/Github.svg"
 import { ReactComponent as MongoDBLogo} from "../assets/MongoDB.svg"
 import { ReactComponent as FirebaseLogo} from "../assets/Firebase.svg"
 import { ReactComponent as NodeJSLogo} from "../assets/NodeJS.svg"
+import { ReactComponent as ZustandLogo} from "../assets/Zustand.svg"
+import { ReactComponent as AndroidStudioLogo} from "../assets/AndroidStudio.svg"
+import { ReactComponent as SeleniumLogo} from "../assets/Selenium.svg"
 
 export default function Skills () {
     const ref = useRef(null)
@@ -156,6 +159,12 @@ export default function Skills () {
                         <div className="mt-2 text-slate-400 font-shareTechMono">React Query</div>
                     </div>
                 </div>
+                <div className="row-start-4 col-span-2 gap-2 flex flex-row justify-center mt-8">
+                    <div className="flex flex-col justify-center">
+                        <ZustandLogo className="w-28 h-28"/>
+                        <div className="mt-2 text-slate-400 font-shareTechMono">Zustand</div>
+                    </div>
+                </div>
             </motion.div>
             }
             {/* Others */}
@@ -185,8 +194,19 @@ export default function Skills () {
                         <div className="mt-2 text-slate-400 font-shareTechMono">Firebase</div>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <NodeJSLogo className="px-2 w-36 h-28"/>
+                        <NodeJSLogo className="px-2 w-28 h-28"/>
                         <div className="mt-2 text-slate-400 font-shareTechMono">Node JS</div>
+                    </div>
+                </div>
+
+                <div className="row-start-4 col-span-2 gap-4 flex flex-row justify-around">
+                    <div className="flex flex-col justify-center">
+                        <AndroidStudioLogo className="w-28 h-28"/>
+                        <div className="mt-2 text-slate-400 font-shareTechMono">Android Studio</div>
+                    </div>
+                    <div className="flex flex-col justify-center">
+                        <SeleniumLogo className="px-2 w-28 h-28"/>
+                        <div className="mt-2 text-slate-400 font-shareTechMono">Selenium</div>
                     </div>
                 </div>
             </motion.div>
