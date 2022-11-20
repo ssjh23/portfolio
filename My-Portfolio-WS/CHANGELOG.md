@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/ssjh23/portfolio/compare/v0.0.4...v0.0.5) (2022-11-20)
+
+
+### Features
+
+* Added additional css conditions for diff screen resolution ([db7d5b6](https://github.com/ssjh23/portfolio/commit/db7d5b63aa33442d4de3cdc2be574fc994d9c446))
+* Added all SVGs, and refactored CSS ([9006e9a](https://github.com/ssjh23/portfolio/commit/9006e9ab2f652355c4a6aaf79a01239cebc1cbc2))
+* Added svg icons and Language row ([1e28325](https://github.com/ssjh23/portfolio/commit/1e283251302e9fa3a513204a7586bca486eb3e87))
+
 ### [0.0.4](https://github.com/ssjh23/portfolio/compare/v0.0.3...v0.0.4) (2022-11-13)
 
 
