@@ -17,7 +17,7 @@ export default function Contact () {
     return (
         <motion.div 
             ref = {ref}
-            className="snap-start bg-slate-800 h-screen col-start-2 col-span-7" 
+            className="bg-slate-800 h-screen col-start-2 col-span-7" 
             id="Contact"
         >
             <span className="text-teal-400">Contact</span>

@@ -26,18 +26,22 @@ export default function Projects () {
     return (
         <motion.div 
             ref = {ref}
-            className="grid grid-rows-5 grid-cols-4 bg-slate-800 h-screen col-start-2 col-span-6 snap-start" 
+            className="grid auto-rows-max grid-cols-4  bg-slate-800  col-start-2 col-span-6" 
             id="Projects"
         >
-            <div className="flex flex-col justify-center col-span-4">
+            <div className="flex flex-col justify-center col-span-4 xl:p-28">
                 <Header isInView= {isInView} HeaderString="What have I worked on?" Index="03." setHeaderAnimated={handleSetAnimated}/>
             </div>
-            <div className="flex flex-col justify-center row-start-2 row-span-2 col-span-4">
+            <div className="flex flex-col justify-center row-start-2 col-span-4">
                 <ProjectCard imgUrl={ScanCartImg} TintedImgUrl={TintedScanCartImg}/>
             </div>
-            <div className="flex flex-col justify-center row-start-4 row-span-2 col-span-4">
+            <div className="flex flex-col justify-center row-start-3 col-span-4">
+                <ProjectCard imgUrl={ScanCartImg} TintedImgUrl={TintedScanCartImg}/>
+            </div>
+            <div className="flex flex-col justify-center row-start-4 col-span-4">
                 <ProjectCard imgUrl={ScanCartImg} TintedImgUrl={TintedScanCartImg}/>
             </div>
         </motion.div>
+        
     )
 }
