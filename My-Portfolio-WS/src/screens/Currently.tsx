@@ -18,7 +18,7 @@ export default function Currently () {
     return (
         <motion.div 
             ref = {ref}
-            className="snap-start bg-slate-800 h-screen col-start-2 col-span-7" 
+            className=" bg-slate-900 h-screen col-start-2 col-span-7" 
             id="Currently"
         >
             <span className="text-teal-400">Currently</span>

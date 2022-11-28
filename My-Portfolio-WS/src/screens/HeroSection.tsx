@@ -28,7 +28,7 @@ export default function HeroSection () {
     return (
         <motion.div 
             ref={ref} 
-            className="flex bg-slate-800 h-screen snap-start" 
+            className="flex bg-slate-900 h-screen" 
             id="Intro">
             <div className="flex flex-col xl:ml-60 2xl:ml-80 pl-32 pt-40">
                 <HeroSectionSVG isSVGCompleted={isSVGAnimationComplete}/>
@@ -46,10 +46,6 @@ export default function HeroSection () {
                         animate={{opacity:1, x:0}} 
                         transition={{delay:0.5, duration:0.8}} 
                         className="text-xl text-left text-slate-400 mt-6 w-1/2">
-                                {/* Hello! My name is Sean Soo and I enjoy making things work with code. Making an Android phone app, working with an Arduino to make a simple RC Robot or building a website, I have tried it all! And 
-                                each experience, good or bad, has made me enjoy appreciate my field more.
-                                <br></br><br></br>"Learn Smart, Learn Fast" is my own personal motto. It is a reminder that in the ever-changing field of Software Engineering, continuous adaptation while maintaining quality is key. True to the cliche, the journey
-                                is just as important as the destination */}
                                 I am a Computer Science Undergrad in my 3rd year at <a href="https://istd.sutd.edu.sg/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline underline-offset-1">Singapore University of Technology and Design</a>. 
                                 An aspiring Software Engineer looking, I enjoy making things work with code.
                                 <br></br><br></br>Currently, I am interning at <a href="https://www.voltality.io/" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline underline-offset-1">Voltality</a> as a Frontend Engineer

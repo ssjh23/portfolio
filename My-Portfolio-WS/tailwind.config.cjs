@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['"Inter"', ...defaultTheme.fontFamily.sans],
-        shareTechMono: ['"Share Tech Mono"', ...defaultTheme.fontFamily.sans]
+        shareTechMono: ['"Share Tech Mono"', ...defaultTheme.fontFamily.sans],
+        robotoMono: ['"Roboto Mono"', ...defaultTheme.fontFamily.sans]
       }
     },
   },
