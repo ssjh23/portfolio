@@ -47,7 +47,7 @@ export default function About () {
     }, [isInView])
     return (
         <motion.div ref={ref}
-            className="grid grid-rows-6 grid-cols-6 bg-slate-800 h-screen col-start-2 col-span-6" 
+            className="grid grid-rows-6 grid-cols-6 bg-slate-900 h-screen col-start-2 col-span-6" 
             id="About"
             viewport={{ once:false }}
         >   
