@@ -2,6 +2,10 @@ import ScanCartImg from '../assets/ScanCart.png'
 import TintedScanCartImg from '../assets/ScanCartColoured.png'
 import WTH from '../assets/WTH.png'
 import TintedWTH from '../assets/TintedWTH.png'
+import SUTD from '../assets/SUTD.png'
+import TintedSUTD from '../assets/TintedSUTD.png'
+import Portfolio from '../assets/Portfolio.png'
+import TintedPortfolio from '../assets/TintedPortfolio.png'
 
 
 export const ProjectItems: any = [
@@ -36,6 +40,38 @@ export const ProjectItems: any = [
             ProjectLink: 'https://devpost.com/software/pickmegarb',
             GithubRepo: 'https://github.com/ssjh23/telegrambotcounter',
             Tech: ['Python', 'Firebase', 'Telegram API', 'Google Maps API']
+        }
+
+    },
+    {
+        Title: '03. 50.003 Elements Of Software Engineering Project',
+        ImgUrl: SUTD,
+        TintedImgUrl: TintedSUTD,
+        Content:{
+            Description: "A web application for Ascenda Loyalty under SUTD's Software Construction module.",
+            Responsibilities: [ 
+                "Built Landing Page with Search Bar, Date Selection and Dropdown lists.",
+                "Helped in building the backend using Express",
+                "Prepared the End to End tests using Selenium Automation in Java"
+                ],
+            ProjectLink: 'https://docs.google.com/document/d/1Tvkz0S6jCbet_DnLZZyQ6rusQkDBwyJYVeZmpkvzlCM/edit#',
+            GithubRepo: 'https://github.com/ssjh23/hotelBookingAscenda',
+            Tech: ['React', 'ExpressJS', 'MongoDB', 'NodeJS', 'Selenium', 'Java']
+        }
+
+    },
+    {
+        Title: '04. This Website :D',
+        ImgUrl: Portfolio,
+        TintedImgUrl: TintedPortfolio,
+        Content:{
+            Description: "My portfolio website, my first official personal project",
+            Responsibilities: [ 
+                    "Well, all of it"
+                ],
+            ProjectLink: null,
+            GithubRepo: 'https://github.com/ssjh23/portfolio',
+            Tech: ['React', 'Framer Motion', 'Zustand', 'TailwindCSS']
         }
 
     }
