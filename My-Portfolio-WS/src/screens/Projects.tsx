@@ -1,11 +1,12 @@
 import { usePageStore } from "../store"
 import { useEffect, useRef, useState } from "react"
-import { useInView, motion } from "framer-motion"
+import { useInView, motion, Variants } from "framer-motion"
 import Header from "../components/Header"
 import ProjectCard from "../components/ProjectCard"
 import { ProjectItems, ProjectItem} from "../models/ProjectItems"
 export default function Projects () {
     const [headerAnimated, setHeaderAnimated] = useState(false)
+    const [placeHolder, setPlaceHolder] = useState(true)
     const ref = useRef(null)
     const isInView = useInView(ref, {
         margin: "-100px"
@@ -16,13 +17,27 @@ export default function Projects () {
    const handleSetAnimated = () => {
     setHeaderAnimated(true)
    }
+   const removePlaceholder = () => {
+    setPlaceHolder(false)
+   }
+   const skillVariants: Variants = {
+    hidden:{
+        opacity: 0
+    },
+    visible:{
+        opacity: 1,
+        transition: {
+            delay:1,
+            duration:1
+        }
+    }
+}
    const Projects = ProjectItems.map((ProjectItem: ProjectItem) => {
     return<ProjectCard imgUrl={ProjectItem.ImgUrl} TintedImgUrl={ProjectItem.TintedImgUrl} Title={ProjectItem.Title} Content={ProjectItem.Content}/>
 })
    useEffect(() => {
         if(isInView){
             setPage(3)
-            console.log(currentPage)
         }
     }, [isInView])
     return (
@@ -34,10 +49,15 @@ export default function Projects () {
             <div className="flex flex-col justify-center col-span-4 xl:p-28">
                 <Header isInView= {isInView} HeaderString="What have I worked on?" Index="03." setHeaderAnimated={handleSetAnimated}/>
             </div>
-            <div className="flex flex-col justify-center row-start-2 col-span-4">
+            <motion.div 
+                className="flex flex-col justify-center row-start-2 col-span-4"
+                initial="hidden"
+                animate={isInView&&"visible"}
+                variants={skillVariants}
+                >
                 {Projects}
-            </div>
-
+            </motion.div>
+            
         </motion.div>
         
     )

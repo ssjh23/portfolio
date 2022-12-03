@@ -30,7 +30,6 @@ export default function Skills () {
     const [languagesAnimated, setLanguagesAnimated] = useState(false)
     const [frameworkAnimated, setFrameworkAnimated] = useState(false)
     const [librariesAnimated, setLibrariesAnimated] = useState(false)
-    const [othersAnimated, setOthersAnimated] = useState(false)
     const [ currentPage, setPage ] = usePageStore((state)=> 
     [state.currentPage, state.setPage]
    )
@@ -42,7 +41,7 @@ export default function Skills () {
     visible:{
         opacity: 1,
         transition: {
-            duration:1
+            duration:0.5
         }
     }
 }
@@ -52,7 +51,6 @@ export default function Skills () {
     useEffect(()=>{
         if (isInView){
            setPage(2)
-           console.log(currentPage)
         }
     },[isInView])
     return (

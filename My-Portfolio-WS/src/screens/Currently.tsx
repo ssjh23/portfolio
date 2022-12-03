@@ -17,7 +17,6 @@ export default function Currently () {
    useEffect(() => {
         if(isInView){
             setPage(4)
-            console.log(currentPage)
         }
     }, [isInView])
     return (
@@ -27,7 +26,7 @@ export default function Currently () {
             id="Currently"
         >
             <div className="flex flex-col justify-center col-span-4 xl:p-28">
-                <Header isInView= {isInView} HeaderString="What have I worked on?" Index="03." setHeaderAnimated={handleSetAnimated}/>
+                <Header isInView= {isInView} HeaderString="What am I doing now?" Index="04." setHeaderAnimated={handleSetAnimated}/>
             </div>
         </motion.div>
     )
