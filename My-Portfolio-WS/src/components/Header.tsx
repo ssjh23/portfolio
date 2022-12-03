@@ -16,7 +16,7 @@ const headerVariants: Variants = {
         x:0, 
         opacity: 1,
         transition: {
-            duration:1.5
+            duration:1
         }
     }
 }

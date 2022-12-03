@@ -30,7 +30,6 @@ export default function Skills () {
     const [languagesAnimated, setLanguagesAnimated] = useState(false)
     const [frameworkAnimated, setFrameworkAnimated] = useState(false)
     const [librariesAnimated, setLibrariesAnimated] = useState(false)
-    const [othersAnimated, setOthersAnimated] = useState(false)
     const [ currentPage, setPage ] = usePageStore((state)=> 
     [state.currentPage, state.setPage]
    )
@@ -42,7 +41,7 @@ export default function Skills () {
     visible:{
         opacity: 1,
         transition: {
-            duration:1
+            duration:0.5
         }
     }
 }
@@ -52,7 +51,6 @@ export default function Skills () {
     useEffect(()=>{
         if (isInView){
            setPage(2)
-           console.log(currentPage)
         }
     },[isInView])
     return (
@@ -72,27 +70,27 @@ export default function Skills () {
                 variants={skillVariants}
                 onAnimationComplete={() => {setLanguagesAnimated(true)}}
                 >
-                <div className="flex flex-row items-center justify-center row-start-1 col-span-2 font-shareTechMono text-teal-400">I have used the following Languages:</div>
+                <div className="flex flex-row items-center justify-center col-span-2 font-shareTechMono text-teal-400">I have used the following Languages:</div>
 
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <PythonLogo className="xl:h-28 xl:w-28"/>
-                        <div className="mt- text-slate-400 font-shareTechMono">Python</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <PythonLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">Python</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <JavascriptLogo className="px-2 w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Javascript</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <JavascriptLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Javascript</div>
                     </div>
                 </div>
 
                 <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <TypescriptLogo className="w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Typescript</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <TypescriptLogo className="xl:h-28 w-28 "/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Typescript</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <JavaLogo className="px-2 w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Java</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <JavaLogo className="xl:h-28 w-28 "/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">Java</div>
                     </div>
                 </div>
             </motion.div>
@@ -100,29 +98,29 @@ export default function Skills () {
             {/* Frameworks */}
             {languagesAnimated &&
                 <motion.div
-                className="row-start-2 col-start-2 row-span-5 grid grid-cols-2 grid-rows-5 items-center"
+                className="col-start-2 row-start-2 row-span-5 grid grid-cols-2 grid-rows-5 justify-center"
                 initial="hidden"
                 animate="visible"
                 variants={skillVariants}
                 onAnimationComplete={() => {setFrameworkAnimated(true)}}
                 >
-                <div className="flex flex-row items-center justify-center row-start-1 col-span-2 font-shareTechMono text-teal-400">And the following Frameworks:</div>
+                <div className="flex flex-row items-center justify-center  col-span-2 font-shareTechMono text-teal-400">And the following Frameworks:</div>
 
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <TailwindLogo className="xl:h-28 xl:w-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">TailwindCSS</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <TailwindLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">TailwindCSS</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <ExpressLogo className="px-2 w-32 h-20"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">ExpressJS</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <ExpressLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">ExpressJS</div>
                     </div>
                 </div>
 
-                <div className="row-start-3 col-span-2 gap-2 flex flex-row justify-center mt-8">
-                    <div className="flex flex-col justify-center">
-                        <VueLogo className="w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">VueJs</div>
+                <div className="row-start-3 col-span-2 gap-2 flex flex-row justify-center">
+                    <div className="grid place-items-center xl: py-6">
+                        <VueLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">VueJs</div>
                     </div>
                 </div>
             </motion.div>
@@ -130,39 +128,39 @@ export default function Skills () {
             {/* Libraries */}
             {frameworkAnimated &&
                 <motion.div
-                className="row-start-2 row-span-5 grid grid-cols-2 grid-rows-5 items-center"
+                className="col-start-3 row-start-2 row-span-5 grid grid-cols-2 grid-rows-5 justify-center"
                 initial="hidden"
                 animate="visible"
                 variants={skillVariants}
                 onAnimationComplete={() => {setLibrariesAnimated(true)}}
                 >
-                <div className="flex flex-row items-center justify-center row-start-1 col-span-2 font-shareTechMono text-teal-400">And the following libraries:</div>
+                <div className="flex flex-row items-center justify-center col-span-2 font-shareTechMono text-teal-400">And the following libraries:</div>
 
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
+                    <div className="grid place-items-center xl: py-6">
                         <FramerMotionLogo className="xl:h-28 xl:w-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Framer Motion</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end">Framer Motion</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <AxiosLogo className="px-2 w-36 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Axios</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <AxiosLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">Axios</div>
                     </div>
                 </div>
 
                 <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <ReactLogo className="w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">React</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <ReactLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">React</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <UseQueryLogo className="px-2 w-36 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">React Query</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <UseQueryLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">React Query</div>
                     </div>
                 </div>
                 <div className="row-start-4 col-span-2 gap-2 flex flex-row justify-center mt-8">
-                    <div className="flex flex-col justify-center">
-                        <ZustandLogo className="w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Zustand</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <ZustandLogo className="xl:h-28 w-28"/>
+                        <div className=" text-slate-400 font-shareTechMono self-end">Zustand</div>
                     </div>
                 </div>
             </motion.div>
@@ -170,7 +168,7 @@ export default function Skills () {
             {/* Others */}
             {librariesAnimated &&
                 <motion.div
-                className="row-start-2 row-span-5 grid grid-cols-2 grid-rows-5 items-center"
+                className="col-start-4 row-start-2 row-span-5 grid grid-cols-2 grid-rows-5 justify-center"
                 initial="hidden"
                 animate="visible"
                 variants={skillVariants}
@@ -178,35 +176,35 @@ export default function Skills () {
                 <div className="flex flex-row items-center justify-center row-start-1 col-span-2 font-shareTechMono text-teal-400">Along with other technologies:</div>
 
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <GithubLogo className="xl:h-28 xl:w-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Github</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <GithubLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Github</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <MongoDBLogo className="px-2 w-36 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">MongoDB</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <MongoDBLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">MongoDB</div>
                     </div>
                 </div>
 
                 <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <FirebaseLogo className="w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Firebase</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <FirebaseLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Firebase</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <NodeJSLogo className="px-2 w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Node JS</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <NodeJSLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Node JS</div>
                     </div>
                 </div>
 
                 <div className="row-start-4 col-span-2 gap-4 flex flex-row justify-around">
-                    <div className="flex flex-col justify-center">
-                        <AndroidStudioLogo className="w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Android Studio</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <AndroidStudioLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Android Studio</div>
                     </div>
-                    <div className="flex flex-col justify-center">
-                        <SeleniumLogo className="px-2 w-28 h-28"/>
-                        <div className="mt-2 text-slate-400 font-shareTechMono">Selenium</div>
+                    <div className="grid place-items-center xl: py-6">
+                        <SeleniumLogo className="xl:h-28 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end">Selenium</div>
                     </div>
                 </div>
             </motion.div>

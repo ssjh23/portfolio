@@ -25,7 +25,7 @@ export default function About () {
         x:0, 
         opacity: 1,
         transition: {
-            duration:1.5
+            duration:1
         }
     },
     hidden_opacity:{
@@ -34,8 +34,7 @@ export default function About () {
     visible_opacity:{
         opacity: 1,
         transition: {
-            delay:0.5,
-            duration:1.5
+            duration:1
         }
     }
 }
@@ -54,7 +53,7 @@ export default function About () {
         <div className="flex flex-col justify-center col-span-6">
             <Header isInView= {isInView} HeaderString="Who am I?" Index="01." setHeaderAnimated={handleSetAnimated}/>
         </div>
-        { headerAnimated && (
+   
             <>
                 <motion.div 
                     className="flex row-start-2 col-start-2 col-span-2 text-left items-center font-shareTechMono text-teal-400 text-2xl"
@@ -93,7 +92,7 @@ export default function About () {
                 </motion.div>
 
             </>
-        )}  
+
         
         </motion.div>
     )
