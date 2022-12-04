@@ -8,7 +8,7 @@ import Portfolio from '../assets/Portfolio.png'
 import TintedPortfolio from '../assets/TintedPortfolio.png'
 
 
-export const ProjectItems: any = [
+export const ProjectItems: ProjectItem[] = [
     {
         Title: '01. ScanCart',
         ImgUrl: ScanCartImg,
@@ -69,7 +69,7 @@ export const ProjectItems: any = [
             Responsibilities: [ 
                     "Well, all of it"
                 ],
-            ProjectLink: null,
+            ProjectLink: undefined,
             GithubRepo: 'https://github.com/ssjh23/portfolio',
             Tech: ['React', 'Framer Motion', 'Zustand', 'TailwindCSS']
         }

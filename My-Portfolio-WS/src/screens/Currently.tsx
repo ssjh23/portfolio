@@ -2,6 +2,8 @@ import { usePageStore } from "../store"
 import { useEffect, useRef, useState } from "react"
 import { useInView, motion } from "framer-motion"
 import Header from "../components/Header"
+import { TimelineItems, TimelineItem} from "../models/TimelineItems"
+import TimelineCard from "../components/TimelineCard"
 export default function Currently () {
     const ref = useRef(null)
     const isInView = useInView(ref, {
@@ -14,6 +16,10 @@ export default function Currently () {
    const handleSetAnimated = () => {
     setHeaderAnimated(true)
    }
+   const Timeline = TimelineItems.map((TimelineItem: TimelineItem) => {
+     return <TimelineCard DateStartEnd={TimelineItem.DateStartEnd} Doing={TimelineItem.Doing} CourseLinks={TimelineItem.CourseLinkTag} CourseLinkTag={TimelineItem.CourseLinkTag}/>
+   })
+
    useEffect(() => {
         if(isInView){
             setPage(4)
@@ -22,11 +28,14 @@ export default function Currently () {
     return (
         <motion.div 
             ref = {ref}
-            className=" bg-slate-900 h-screen col-start-2 col-span-7" 
+            className=" grid grid-rows-6 bg-slate-900 h-screen col-start-2 col-span-7 justify-center" 
             id="Currently"
         >
-            <div className="flex flex-col justify-center col-span-4 xl:p-28">
+            <div className="flex flex-col justify-center">
                 <Header isInView= {isInView} HeaderString="What am I doing now?" Index="04." setHeaderAnimated={handleSetAnimated}/>
+            </div>
+            <div className="grid auto-cols-max h-fit place-items-center">
+                {Timeline}                
             </div>
         </motion.div>
     )
