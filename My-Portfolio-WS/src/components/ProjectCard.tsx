@@ -20,10 +20,10 @@ export default function ProjectCard({imgUrl, TintedImgUrl, Title, Content}:P){
         return <span className=' flex flex-col justify-center font-robotoMono text-slate-400 xl:text-sm mr-8'>{used}</span>
     })
     return(
-        <div className="grid grid-cols-2 grid-rows-6 rxl:py-20 px-80 mb-28">
+        <div className="grid grid-cols-2 grid-rows-6 xl:mb-16 xl:py-8 xl:px-20 2xl:mb-28 2xl:py-20 2xl:px-80 ">
             <motion.img 
                 src={hovered ? imgUrl : TintedImgUrl} 
-                className="place-self-center row-span-6 h-80 w-140 rounded-3xl"
+                className="place-self-center row-span-6 rounded-3xl xl:h-72 2xl:h-80  "
                 whileHover={{scale:1.2}}
                 onHoverStart={() => setHovered(true)}
                 onHoverEnd={() => setHovered(false)}

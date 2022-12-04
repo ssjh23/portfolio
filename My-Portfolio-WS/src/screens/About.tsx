@@ -80,18 +80,14 @@ export default function About () {
                     In school, I am moving to my specialisation, which has to do with Internet Of Things and Cloud Computing, but I do take mods that give me a foundational understanding in other fields as well.
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
-                <motion.div 
-                    className="grid row-start-2 row-span-3 col-start-4 col-span-3 justify-center items-center xl:px-32 2xl:px-72"
+                <motion.img 
+                    src="https://www.landedexperts.com/wp-content/uploads/2019/07/placeholder-m.jpg"
+                    className="grid row-start-3 row-span-3 col-start-4 col-span-3 justify-center items-center xl:ml-40 xl:h-60 2xl: ml-40 2xl:h-80"
                     initial={"hidden_x_img"}
                     animate={isInView && "visible_x_img"}
-                    variants={sidebarVariants}
-                    >     
-                <img 
-                    className="bg-contain rounded-2xl"
-                    src="https://www.landedexperts.com/wp-content/uploads/2019/07/placeholder-m.jpg"
-                >
-                </img>
-                </motion.div>
+                    variants={sidebarVariants}>
+
+                </motion.img>
 
             </>
 
