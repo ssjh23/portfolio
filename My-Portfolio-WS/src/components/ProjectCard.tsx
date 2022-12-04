@@ -2,8 +2,7 @@
 import {motion} from 'framer-motion'
 import {useState} from 'react'
 import { Content } from '../models/ProjectItems'
-import HoveredImage from './HoveredImage'
-import { ReactComponent as GithubOutlineLogo} from "../assets/GithubOutline.svg"
+import { ReactComponent as GithubOutlineLogo} from "../assets/GithubOutline2.svg"
 import { ReactComponent as ExternalLinkLogo} from "../assets/ExternalLink.svg"
 interface P {
     imgUrl: string
