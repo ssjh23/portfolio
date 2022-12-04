@@ -47,11 +47,12 @@ export default function Currently () {
                 <Header isInView= {isInView} HeaderString="What am I doing now?" Index="04." setHeaderAnimated={handleSetAnimated}/>
             </div>
             <motion.div 
-                className="grid auto-cols-max h-fit place-items-center xl:mt-16 2xl:mt-28"
+                className="grid auto-cols-max h-fit place-items-center  xl:mt-16 2xl:mt-28"
                 initial="hidden"
                 animate={isInView&&"visible"}
                 variants={CurrentVariants}
             >
+                <span className="text-slate-400 font-shareTechMono mb-3">Timeline</span>
                 {Timeline}
                 <div className="text-slate-400 xl: mt-8 2xl:mt-16">
                     Besides school curriculum and internships, I am always learning new technologies on my own time. <br></br>Currently, I am learning specifically Golang and Backend concepts 
