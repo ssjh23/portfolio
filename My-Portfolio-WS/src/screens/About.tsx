@@ -25,6 +25,7 @@ export default function About () {
         x:0, 
         opacity: 1,
         transition: {
+            delay:1,
             duration:1
         }
     },
@@ -34,6 +35,7 @@ export default function About () {
     visible_opacity:{
         opacity: 1,
         transition: {
+            delay:1,
             duration:1
         }
     }

@@ -16,7 +16,7 @@ export default function Projects () {
    const handleSetAnimated = () => {
     setHeaderAnimated(true)
    }
-   const skillVariants: Variants = {
+   const ProjectVariants: Variants = {
     hidden:{
         opacity: 0
     },
@@ -50,7 +50,7 @@ export default function Projects () {
                 className="flex flex-col justify-center row-start-2 col-span-4"
                 initial="hidden"
                 animate={isInView&&"visible"}
-                variants={skillVariants}
+                variants={ProjectVariants}
                 >
                 {Projects}
             </motion.div>
