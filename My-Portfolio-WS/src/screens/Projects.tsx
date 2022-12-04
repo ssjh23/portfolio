@@ -6,7 +6,6 @@ import ProjectCard from "../components/ProjectCard"
 import { ProjectItems, ProjectItem} from "../models/ProjectItems"
 export default function Projects () {
     const [headerAnimated, setHeaderAnimated] = useState(false)
-    const [placeHolder, setPlaceHolder] = useState(true)
     const ref = useRef(null)
     const isInView = useInView(ref, {
         margin: "-100px"
@@ -17,10 +16,7 @@ export default function Projects () {
    const handleSetAnimated = () => {
     setHeaderAnimated(true)
    }
-   const removePlaceholder = () => {
-    setPlaceHolder(false)
-   }
-   const skillVariants: Variants = {
+   const ProjectVariants: Variants = {
     hidden:{
         opacity: 0
     },
@@ -34,7 +30,8 @@ export default function Projects () {
 }
    const Projects = ProjectItems.map((ProjectItem: ProjectItem) => {
     return<ProjectCard imgUrl={ProjectItem.ImgUrl} TintedImgUrl={ProjectItem.TintedImgUrl} Title={ProjectItem.Title} Content={ProjectItem.Content}/>
-})
+    })
+
    useEffect(() => {
         if(isInView){
             setPage(3)
@@ -43,7 +40,7 @@ export default function Projects () {
     return (
         <motion.div 
             ref = {ref}
-            className="grid auto-rows-max grid-cols-4  bg-slate-900  col-start-2 col-span-6" 
+            className="grid auto-rows-max grid-cols-4  bg-slate-900  col-start-2 col-span-6 justify-center" 
             id="Projects"
         >
             <div className="flex flex-col justify-center col-span-4 xl:p-28">
@@ -53,7 +50,7 @@ export default function Projects () {
                 className="flex flex-col justify-center row-start-2 col-span-4"
                 initial="hidden"
                 animate={isInView&&"visible"}
-                variants={skillVariants}
+                variants={ProjectVariants}
                 >
                 {Projects}
             </motion.div>
