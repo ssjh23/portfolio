@@ -13,18 +13,26 @@ import Currently from './screens/Currently'
 import Contact from './screens/Contact'
 
 function App() {
+
+  let[renderOtherPages, setRenderOtherPages] = useState(false)
+  const isSVGComplete = (isCompleted:boolean) => {
+    setRenderOtherPages(isCompleted)
+}
   return (
     <BrowserRouter>
     <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth'>
-      <HeroSection/>
-      <div className='grid grid-cols-7 '>
-        <SideNavbar/>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Currently/>
-        <Contact/>
-      </div>
+      <HeroSection isRenderOtherPages={isSVGComplete}/>
+      {renderOtherPages &&
+          <div className='grid grid-cols-7 '>
+            <SideNavbar/>
+            <About/>
+            <Skills/>
+            <Projects/>
+            <Currently/>
+            <Contact/>
+          </div>
+      }
+
     </div>
     </BrowserRouter>
   )

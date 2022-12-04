@@ -4,7 +4,11 @@ import { HashLink } from "react-router-hash-link"
 import HeroSectionSVG from "../components/HeroSectionSVG"
 import { usePageStore } from "../store"
 
-export default function HeroSection () {
+interface P{
+    isRenderOtherPages: Function
+}
+
+export default function HeroSection ({isRenderOtherPages} :P) {
     let[isSVGCompleted, setIsSVGCompleted] = useState(false)
     const ref = useRef(null)
     const isInView = useInView(ref, {
@@ -15,6 +19,7 @@ export default function HeroSection () {
    )
    const isSVGAnimationComplete = (isCompleted:boolean) => {
         setIsSVGCompleted(isCompleted)
+        isRenderOtherPages(isCompleted)
    }
     useEffect(()=>{
         if (isInView){
