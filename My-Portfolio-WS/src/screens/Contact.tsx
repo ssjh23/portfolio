@@ -57,7 +57,7 @@ export default function Contact () {
                 variants={CurrentVariants}
             >
                 <span className="text-teal-400 text-2xl font-shareTechMono">Get in touch with me at:</span>
-                <div className="flex flex-row justify-between 2xl:mt-12">
+                <div className="flex flex-row justify-between xl:mt-8 2xl:mt-12">
                     <a href="https://www.linkedin.com/in/seansoo/" target="_blank" rel="noopener noreferrer">
                     <HoveredImage ImgUrl={BlackLinkedinLogo} hoveredImgUrl ={LinkedinLogo} />
                     </a>
@@ -71,7 +71,7 @@ export default function Contact () {
                         <HoveredImage ImgUrl={BlackEnvelopeLogo} hoveredImgUrl ={EnvelopeLogo} />
                     </a>
                 </div>
-                <span className="text-teal-400 text-2xl font-shareTechMono 2xl:mt-12">For My Resume:</span>
+                <span className="text-teal-400 text-2xl font-shareTechMono xl:mt-8 2xl:mt-12">For My Resume:</span>
                 <a
                   //this will save the file as "your_cv.pdf"
                   download="Resume Sean Soo"
@@ -91,12 +91,12 @@ export default function Contact () {
                             scale:1.0,
                             backgroundColor:"#fff"
                         }}
-                        className="self-start border-solid border-teal-400 border-2 rounded-lg text-teal-400 font-shareTechMono 2xl:p-4 mt-6">
+                        className="self-start border-solid border-teal-400 border-2 rounded-lg text-teal-400 font-shareTechMono xl:p-2 2xl:p-4 mt-6">
                             PDF Here!
                     </motion.button>
                 </a>
-                <span className="font-shareTechMono italic text-slate-400 2xl: mt-60">"What I cannot create, I do not understand" <br></br> ~Richard Feynman</span>
-                <span className="font-shareTechMono text-slate-400 2xl: mt-40">Designed and Built by Sean Soo</span>
+                <span className="font-shareTechMono italic text-slate-400 xl:mt-32 2xl:mt-60">"What I cannot create, I do not understand" <br></br> ~Richard Feynman</span>
+                <span className="font-shareTechMono text-slate-400 xl:mt-24 2xl:mt-40">Designed and Built by Sean Soo</span>
              
             </motion.div>
 

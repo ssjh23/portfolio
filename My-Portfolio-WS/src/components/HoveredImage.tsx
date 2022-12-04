@@ -11,7 +11,7 @@ export default function HoveredImage({ hoveredImgUrl, ImgUrl}:P){
     return(
         <motion.img 
             src={hovered ? hoveredImgUrl : ImgUrl}
-            className="place-self-center row-span-6 rounded-3xl 2xl:h-16"
+            className="place-self-center row-span-6 rounded-3xl xl: h-12 2xl:h-16"
             whileHover={{scale:1.2}}
             onHoverStart={() => setHovered(true)}
             onHoverEnd={() => setHovered(false)}
