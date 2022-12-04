@@ -56,7 +56,7 @@ export default function Skills () {
     return (
         <motion.div
             ref={ref} 
-            className="grid grid-rows-6 grid-cols-4 bg-slate-900 h-screen col-start-2 col-span-6 justify-center" 
+            className="grid grid-rows-6 grid-cols-4 bg-slate-900 h-screen col-start-2 col-span-6" 
             id="Skills">
             <div className="flex flex-col justify-center col-span-6">
                 <Header isInView= {isInView} HeaderString="What can I use?" Index="02." setHeaderAnimated={handleSetAnimated}/>
@@ -75,22 +75,22 @@ export default function Skills () {
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
                     <div className="grid place-items-center xl: py-6">
                         <PythonLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">Python</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Python</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <JavascriptLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Javascript</div>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Javascript</div>
                     </div>
                 </div>
 
-                <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around">
+                <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around 2xl:mt-0 xl:mt-6">
                     <div className="grid place-items-center xl: py-6">
                         <TypescriptLogo className="xl:h-28 w-28 "/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Typescript</div>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Typescript</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <JavaLogo className="xl:h-28 w-28 "/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">Java</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Java</div>
                     </div>
                 </div>
             </motion.div>
@@ -109,18 +109,18 @@ export default function Skills () {
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
                     <div className="grid place-items-center xl: py-6">
                         <TailwindLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">TailwindCSS</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">TailwindCSS</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <ExpressLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">ExpressJS</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">ExpressJS</div>
                     </div>
                 </div>
 
-                <div className="row-start-3 col-span-2 gap-2 flex flex-row justify-center">
+                <div className="row-start-3 col-span-2 gap-2 flex flex-row justify-center 2xl:mt-0 xl:mt-6">
                     <div className="grid place-items-center xl: py-6">
                         <VueLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">VueJs</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">VueJs</div>
                     </div>
                 </div>
             </motion.div>
@@ -139,28 +139,28 @@ export default function Skills () {
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
                     <div className="grid place-items-center xl: py-6">
                         <FramerMotionLogo className="xl:h-28 xl:w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">Framer Motion</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Framer Motion</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <AxiosLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">Axios</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Axios</div>
                     </div>
                 </div>
 
-                <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around">
+                <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around 2xl:mt-0 xl:mt-6">
                     <div className="grid place-items-center xl: py-6">
                         <ReactLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">React</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">React</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <UseQueryLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">React Query</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">React Query</div>
                     </div>
                 </div>
-                <div className="row-start-4 col-span-2 gap-2 flex flex-row justify-center mt-8">
+                <div className="row-start-4 col-span-2 gap-2 flex flex-row justify-center 2xl:mt-0 xl:mt-6">
                     <div className="grid place-items-center xl: py-6">
                         <ZustandLogo className="xl:h-28 w-28"/>
-                        <div className=" text-slate-400 font-shareTechMono self-end">Zustand</div>
+                        <div className=" text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Zustand</div>
                     </div>
                 </div>
             </motion.div>
@@ -178,33 +178,33 @@ export default function Skills () {
                 <div className="row-start-2 col-span-2 gap-4 flex flex-row justify-around">
                     <div className="grid place-items-center xl: py-6">
                         <GithubLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Github</div>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Github</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <MongoDBLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">MongoDB</div>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">MongoDB</div>
                     </div>
                 </div>
 
-                <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around">
+                <div className="row-start-3 col-span-2 gap-4 flex flex-row justify-around 2xl:mt-0 xl:mt-6">
                     <div className="grid place-items-center xl: py-6">
                         <FirebaseLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Firebase</div>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Firebase</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
                         <NodeJSLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Node JS</div>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Node JS</div>
                     </div>
                 </div>
 
-                <div className="row-start-4 col-span-2 gap-4 flex flex-row justify-around">
+                <div className="row-start-4 col-span-2 gap-4 flex flex-row justify-around 2xl:mt-0 xl:mt-6">
                     <div className="grid place-items-center xl: py-6">
-                        <AndroidStudioLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Android Studio</div>
+                        <AndroidStudioLogo className="xl:h-28 2xl:w-28 xl:w-20 w-28"/>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Android Studio</div>
                     </div>
                     <div className="grid place-items-center xl: py-6">
-                        <SeleniumLogo className="xl:h-28 w-28"/>
-                        <div className="text-slate-400 font-shareTechMono self-end">Selenium</div>
+                        <SeleniumLogo className="xl:h-28 2xl:w-28 xl:w-20"/>
+                        <div className="text-slate-400 font-shareTechMono self-end 2xl:mt-0 xl:mt-2">Selenium</div>
                     </div>
                 </div>
             </motion.div>
