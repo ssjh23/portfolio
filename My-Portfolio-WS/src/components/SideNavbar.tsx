@@ -22,7 +22,7 @@ export default function SideNavbar () {
         }
     }
     return(
-        <div className="h-screen flex flex-col justify-center items-center col-start-1 col-span-1 sticky top-0 z-0 bg-slate-900">
+        <div className="h-screen flex flex-col justify-center items-center col-start-1 col-span-1 sticky top-0 z-0 pl-6 bg-slate-900">
             <div ref={ref}>
                 <motion.div 
                     className="font-shareTechMono flex flex-col gap-2"

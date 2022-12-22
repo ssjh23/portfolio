@@ -48,17 +48,17 @@ export default function About () {
     }, [isInView])
     return (
         <motion.div ref={ref}
-            className="grid grid-rows-6 grid-cols-6 bg-slate-900 h-screen col-start-2 col-span-6 justify-center" 
+            className="grid place-items-center auto-rows-auto auto-cols-auto xl:auto-rows-min  bg-slate-900 h-screen col-start-2 col-span-6 justify-items-center" 
             id="About"
             viewport={{ once:false }}
         >   
-        <div className="flex flex-col justify-center col-span-6">
+        <div className="flex flex-col justify-center xl:mt-16">
             <Header isInView= {isInView} HeaderString="Who am I?" Index="01." setHeaderAnimated={handleSetAnimated}/>
         </div>
    
             <>
                 <motion.div 
-                    className="flex row-start-2 col-start-2 col-span-2 text-left items-center font-shareTechMono text-teal-400 text-2xl"
+                    className=" row-start-2  xl:mt-24 font-shareTechMono text-teal-400 text-lg md:text-xl xl:text-2xl"
                     initial={"hidden_opacity"}
                     animate={isInView && "visible_opacity"}
                     variants={sidebarVariants}
@@ -66,23 +66,23 @@ export default function About () {
                     A little about me
                 </motion.div> 
                 <motion.div 
-                    className="row-start-3 col-start-2 col-span-2 xl:text-base 2xl:text-xl text-left text-slate-400"
+                    className="row-start-4 xl:row-start-3 text-center w-4/6 xl:mt-12 text-slate-400 w-3/6 text-xs sm:text-sm xl:text-base 2xl:text-xl"
                     initial={"hidden_opacity"}
                     animate={isInView && "visible_opacity"}
                     variants={sidebarVariants}
                 >
                     Hello! My name is Sean Soo and I enjoy making things work with code. Making an Android phone app, working with an Arduino to make a simple RC Robot or building a website, I have tried it all! And 
-                    each experience, good or bad, has made me enjoy appreciate my field more.
+                    each experience has made me enjoy appreciate my field more.
                     <br></br><br></br>
                     "Learn Smart, Learn Fast" is my own personal motto. It is a reminder that in the ever-changing field of Software Engineering, continuous adaptation (Fast) while maintaining quality (Smart) is key. True to the cliche, the journey
                     is just as important as the destination
                     <br></br><br></br>
-                    In school, I am moving to my specialisation, which has to do with Internet Of Things and Cloud Computing, but I do take mods that give me a foundational understanding in other fields as well.
+                    In school, I am moving to my specialisation, Internet Of Things and Cloud Computing.
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
                 <motion.img 
                     src="https://www.landedexperts.com/wp-content/uploads/2019/07/placeholder-m.jpg"
-                    className="grid row-start-3 row-span-3 col-start-4 col-span-3 justify-center items-center xl:ml-40 xl:h-60 2xl: ml-40 2xl:h-80"
+                    className="grid row-start-3 xl:col-start-2 justify-center items-center xl:mt-12 xl:mr-20 h-40 sm:h-52 lg:h-60 xl:h-3/6 2xl:h-4/6 "
                     initial={"hidden_x_img"}
                     animate={isInView && "visible_x_img"}
                     variants={sidebarVariants}>

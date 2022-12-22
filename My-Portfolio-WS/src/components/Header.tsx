@@ -23,7 +23,7 @@ const headerVariants: Variants = {
 export default function Header({ isInView, Index, HeaderString, setHeaderAnimated } :P){
     return(
         <motion.div
-        className="flex col-start-3 col-span-2 bg-slate-900 text-teal-400 items-center justify-center text-4xl font-shareTechMono"
+        className="flex col-start-3 col-span-2 bg-slate-900 text-teal-400 items-center justify-center text-2xl md:text-3xl xl:text-4xl font-shareTechMono"
         initial={"hidden_y"}
         animate={isInView && "visible_y"}
         variants={headerVariants}
