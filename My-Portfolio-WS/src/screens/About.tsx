@@ -66,7 +66,7 @@ export default function About () {
                     A little about me
                 </motion.div> 
                 <motion.div 
-                    className="row-start-4 xl:row-start-3 text-center w-4/6 xl:mt-12 text-slate-400 w-3/6 text-xs sm:text-sm xl:text-base 2xl:text-xl"
+                    className="row-start-4 xl:row-start-3 text-center w-4/6 xl:mt-12 text-slate-400 text-xs sm:text-sm xl:text-base 2xl:text-xl"
                     initial={"hidden_opacity"}
                     animate={isInView && "visible_opacity"}
                     variants={sidebarVariants}
