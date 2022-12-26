@@ -48,7 +48,7 @@ export default function About () {
     }, [isInView])
     return (
         <motion.div ref={ref}
-            className="grid h-screen place-items-center auto-rows-auto auto-cols-auto xl:auto-rows-min  bg-slate-900 h-screen col-start-2 col-span-6 justify-items-center" 
+            className="grid h-screen place-items-center auto-rows-auto auto-cols-auto xl:auto-rows-min  bg-slate-900 col-start-2 col-span-6 justify-items-center" 
             id="About"
             viewport={{ once:false }}
         >   

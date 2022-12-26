@@ -40,14 +40,13 @@ export default function Projects () {
     return (
         <motion.div 
             ref = {ref}
-            className="grid auto-rows-max grid-cols-4  bg-slate-900  col-start-2 col-span-6 justify-center" 
+            className="flex flex-col bg-slate-900 col-start-2 col-span-6 justify-center" 
             id="Projects"
         >
-            <div className="flex flex-col justify-center col-span-4 xl:p-28">
+            <div className="flex flex-col justify-center ">
                 <Header isInView= {isInView} HeaderString="What have I worked on?" Index="03." setHeaderAnimated={handleSetAnimated}/>
             </div>
             <motion.div 
-                className="flex flex-col justify-center row-start-2 col-span-4"
                 initial="hidden"
                 animate={isInView&&"visible"}
                 variants={ProjectVariants}
