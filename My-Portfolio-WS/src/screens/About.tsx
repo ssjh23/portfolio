@@ -48,11 +48,11 @@ export default function About () {
     }, [isInView])
     return (
         <motion.div ref={ref}
-            className="grid place-items-center auto-rows-auto auto-cols-auto xl:auto-rows-min  bg-slate-900 h-screen col-start-2 col-span-6 justify-items-center" 
+            className="grid h-screen place-items-center auto-rows-auto auto-cols-auto xl:auto-rows-min  bg-slate-900 h-screen col-start-2 col-span-6 justify-items-center" 
             id="About"
             viewport={{ once:false }}
         >   
-        <div className="flex flex-col justify-center xl:mt-16">
+        <div className="flex flex-col justify-center xl:mt-16 xl:col-span-2">
             <Header isInView= {isInView} HeaderString="Who am I?" Index="01." setHeaderAnimated={handleSetAnimated}/>
         </div>
    
