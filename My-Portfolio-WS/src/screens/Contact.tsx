@@ -44,20 +44,20 @@ export default function Contact () {
     return (
         <motion.div 
             ref = {ref}
-            className="grid grid-rows-6 bg-slate-900 h-screen col-start-2 col-span-7 justify-center" 
+            className="grid auto-cols-auto auto-rows-auto bg-slate-900 h-screen col-start-2 col-span-7 justify-center" 
             id="Contact"
         >
             <div className="flex flex-col justify-center">
                 <Header isInView= {isInView} HeaderString="Where can you find me?" Index="05." setHeaderAnimated={handleSetAnimated}/>
             </div>
             <motion.div 
-                className="grid auto-cols-max h-fit justify-center xl:mt-16 2xl:mt-28"
+                className="flex flex-col h-fit w-full justify-center"
                 initial="hidden"
                 animate={isInView&&"visible"}
                 variants={CurrentVariants}
             >
-                <span className="text-teal-400 text-2xl font-shareTechMono">Get in touch with me at:</span>
-                <div className="flex flex-row justify-between xl:mt-8 2xl:mt-12">
+                <span className="text-teal-400 text-sm font-shareTechMono md:text-base">Get in touch with me at:</span>
+                <div className="flex flex-row justify-between place-self-center mt-8 md:mt-20 w-5/6">
                     <a href="https://www.linkedin.com/in/seansoo/" target="_blank" rel="noopener noreferrer">
                     <HoveredImage ImgUrl={BlackLinkedinLogo} hoveredImgUrl ={LinkedinLogo} />
                     </a>
@@ -71,13 +71,12 @@ export default function Contact () {
                         <HoveredImage ImgUrl={BlackEnvelopeLogo} hoveredImgUrl ={EnvelopeLogo} />
                     </a>
                 </div>
-                <span className="text-teal-400 text-2xl font-shareTechMono xl:mt-8 2xl:mt-12">For My Resume:</span>
+                <span className="text-teal-400 text-sm font-shareTechMono mt-8 md:text-base">For My Resume:</span>
                 <a
                   //this will save the file as "your_cv.pdf"
                   download="Resume Sean Soo"
                   //put the path of your pdf file
                   href="src/assets/Sean_Soo_-_Software_Engineer_Intern.pdf"
-                  //reactstrap classes. add green button
                 >
                     
                     <motion.button 
@@ -91,12 +90,12 @@ export default function Contact () {
                             scale:1.0,
                             backgroundColor:"#fff"
                         }}
-                        className="self-start border-solid border-teal-400 border-2 rounded-lg text-teal-400 font-shareTechMono xl:p-2 2xl:p-4 mt-6">
+                        className="self-start border-solid border-teal-400 border-2 rounded-lg text-teal-400 font-shareTechMono p-2 md:p-4 mt-6 md:mt-12">
                             PDF Here!
                     </motion.button>
                 </a>
-                <span className="font-shareTechMono italic text-slate-400 xl:mt-32 2xl:mt-60">"What I cannot create, I do not understand" <br></br> ~Richard Feynman</span>
-                <span className="font-shareTechMono text-slate-400 xl:mt-24 2xl:mt-40">Designed and Built by Sean Soo</span>
+                <span className="font-shareTechMono italic text-slate-400 mt-8 md:mt-32 md:text-base text-xs place-self-center ">"What I cannot create, I do not understand" <br></br> ~Richard Feynman</span>
+                <span className="font-shareTechMono text-slate-400 text-xs mt-12 md:text-sm xl:text-base xl:mt-24 2xl:mt-40">Designed and Built by Sean Soo</span>
              
             </motion.div>
 
