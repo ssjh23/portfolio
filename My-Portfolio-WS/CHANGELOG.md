@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/ssjh23/portfolio/compare/v0.0.5...v0.0.6) (2023-01-01)
+
+
+### Features
+
+* Added Current Section ([18741c1](https://github.com/ssjh23/portfolio/commit/18741c1071c0cf0b61bd255b4fc6e19af751dc0f))
+* Added onHover effect for image in Project Card ([c057df2](https://github.com/ssjh23/portfolio/commit/c057df285f77a61f334082d376064fb07296c300))
+* Added ProjectCard and relevant models, renders ProjectCard as a list of ProjectItems ([fa14c82](https://github.com/ssjh23/portfolio/commit/fa14c82bcadf3d254f76e71a1b28758514f3c915))
+* Added ProjectCard with ScanCart image, added additional content to skills page ([8ae73aa](https://github.com/ssjh23/portfolio/commit/8ae73aab313f8daf0ea50680466dbd0807c63b0c))
+* Added Timeline to Currently Section ([8515b22](https://github.com/ssjh23/portfolio/commit/8515b2235f4b5913009e9b958be821368b9ae989))
+* Contact Section ([f0e5ae1](https://github.com/ssjh23/portfolio/commit/f0e5ae118ba68114c3241f048ee2c45445b8adb6))
+* finalised Project ([fb541a5](https://github.com/ssjh23/portfolio/commit/fb541a5ceb56096abb5a36c2fceadf95a3ef71f7))
+* Finalised project section ([eb50c8b](https://github.com/ssjh23/portfolio/commit/eb50c8b6603daba8f96557484d7adbf873133705))
+* Render other pages only when svg is done ([9f11207](https://github.com/ssjh23/portfolio/commit/9f1120755b4cf08dce5111c4ee45a48618309e46))
+
+
+### Bug Fixes
+
+* fixed responsive design for skills ([93a7fbf](https://github.com/ssjh23/portfolio/commit/93a7fbf1162876121d2d7e7a8aa35ae0ad757f0d))
+* HeroSection Responsive CSS ([d265b2b](https://github.com/ssjh23/portfolio/commit/d265b2bcb8b4148e9e9d636dffdf740b2a5ff6bb))
+* import case-sensitive change for vercel ([22e3c92](https://github.com/ssjh23/portfolio/commit/22e3c924cd1e6c01ab29ed9ae6f5dab070034898))
+* import case-sensitive change for vercel ([d210766](https://github.com/ssjh23/portfolio/commit/d210766f37647b14d27ef20435694a9d8eafa284))
+* Projects responsive design ([8146244](https://github.com/ssjh23/portfolio/commit/81462448500f0806cb7d93eba3a48b2ae2760ad5))
+* Realigned Skills elements ([deb6a2f](https://github.com/ssjh23/portfolio/commit/deb6a2fcb41cbf969084fed72df2075791f6d08e))
+* Removed snap-start due to poor UI exp ([4adc2b1](https://github.com/ssjh23/portfolio/commit/4adc2b1b38ca30b8ed45d22136372a3255264c1c))
+* Responsive About page ([7508f2c](https://github.com/ssjh23/portfolio/commit/7508f2c66236e6ebd5075911d54e7468af1d9805))
+* Responsive About page ([ed731ea](https://github.com/ssjh23/portfolio/commit/ed731ea66919a09a83db98907419bb1507843887))
+* Responsive Design Contact ([fd257a0](https://github.com/ssjh23/portfolio/commit/fd257a0af2c390b8ac397eb4b3614d571a61ceda))
+* Responsive Design Currently ([89cc1dd](https://github.com/ssjh23/portfolio/commit/89cc1dd98074214af2a55ae218e8a10533f3e070))
+* Screen Responsiveness ([9980213](https://github.com/ssjh23/portfolio/commit/9980213dff58569ff9fcf8a883609f3ba8ea242c))
+
 ### [0.0.5](https://github.com/ssjh23/portfolio/compare/v0.0.4...v0.0.5) (2022-11-20)
 
 
