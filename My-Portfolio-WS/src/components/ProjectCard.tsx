@@ -23,14 +23,14 @@ export default function ProjectCard({imgUrl, TintedImgUrl, Title, Content}:P){
             <h1 className='font-shareTechMono text-teal-400 xl:text-xl py-8 xl:text-left'> {Title} </h1>
             <motion.img 
                 src={hovered ? imgUrl : TintedImgUrl} 
-                className="row-start-2 self-center w-1/2 xl:w-full xl:h-5/6 rounded-3xl mb-8 "
+                className="row-start-2 self-center w-1/2 xl:w-full xl:h-5/6 max-h-96 rounded-3xl mb-8 "
                 whileHover={{scale:1.2}}
                 onHoverStart={() => setHovered(true)}
                 onHoverEnd={() => setHovered(false)}
             ></motion.img>
             <div className='xl:col-start-2 xl:row-start-2'>
             <motion.div 
-                className="bg-slate-800 shadow-black row-start-3 rounded-3xl flex-wrap mx-8 md:mx-16 mb-4 lg:mx-24 p-4 xl:col-start-2 xl:row-start-2 xl:self-center"
+                className="bg-slate-800 shadow-black row-start-3 rounded-3xl flex-wrap mx-8 md:mx-16 mb-4 lg:mx-24 p-4 xl:col-start-2 xl:row-start-2 xl:self-center max-w-screen-md"
                 >
                 <p className='text-left text-slate-400 mb-2 text-xs md:text-sm lg:text-base'>{Content.Description}</p>
                 <div>

@@ -40,21 +40,21 @@ export default function Currently () {
     return (
         <motion.div 
             ref = {ref}
-            className=" grid grid-rows-6 bg-slate-900 h-screen col-start-2 col-span-7 justify-center" 
+            className=" grid auto-cols-auto auto-rows-auto bg-slate-900 h-screen col-start-2 col-span-7 justify-center" 
             id="Currently"
         >
             <div className="flex flex-col justify-center">
                 <Header isInView= {isInView} HeaderString="What am I doing now?" Index="04." setHeaderAnimated={handleSetAnimated}/>
             </div>
             <motion.div 
-                className="grid auto-cols-max h-fit place-items-center  xl:mt-16 2xl:mt-28"
+                className="grid auto-cols-auto auto-rows-auto h-fit place-items-center"
                 initial="hidden"
                 animate={isInView&&"visible"}
                 variants={CurrentVariants}
             >
-                <span className="text-slate-400 font-shareTechMono mb-3">Timeline</span>
+                <span className="text-slate-400 font-shareTechMono mb-3 xl:text-lg ">Timeline</span>
                 {Timeline}
-                <div className="text-slate-400 xl: mt-8 2xl:mt-16">
+                <div className="text-slate-400 text-xs md:text-base p-16 xl:text-xl">
                     Besides school curriculum and internships, I am always learning new technologies on my own time. <br></br>Currently, I am learning specifically Golang and Backend concepts 
                    via <a href="https://roadmap.sh/backend" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline underline-offset-1">roadmap.sh</a>
                 </div>              
