@@ -31,4 +31,4 @@ npm run release
 > I challenged myself to make the website look 'decent' on all resolutions as I never had to build apps that had to be working on all devices. I learned here what is the approach to writing CSS for responsive design, and that I realised I had to refactor almost all the CSS. The common approach is to start doing CSS on mobile first, and then work one's way up. I however did my first version of the website on a 2560*1440 monitor. Refactoring the CSS took me another 2 weeks (CSS is by far my worst skill).
 
 ## Credit
-As said at the beginning
+The design was inspired by [Brittany Chiang](https://brittanychiang.com/). I used the colour palette, fonts and some of the component designs.
