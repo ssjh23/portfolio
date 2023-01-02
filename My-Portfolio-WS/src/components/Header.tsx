@@ -9,11 +9,9 @@ interface P{
 
 const headerVariants: Variants = {
     hidden_y:{
-        x: "100vh", 
         opacity: 0
     },
     visible_y:{
-        x:0, 
         opacity: 1,
         transition: {
             duration:1
