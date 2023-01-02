@@ -64,7 +64,7 @@ export default function Skills () {
         
             <motion.div
                 ref={ref} 
-                className="grid auto-rows-auto auto-cols-auto bg-slate-900 col-start-2 col-span-6 place-items-center" 
+                className="grid auto-rows-auto auto-cols-auto h-screen bg-slate-900 col-start-2 col-span-6 place-items-center" 
                 id="Skills">
                 <div className="xl:col-span-4">
                     <Header isInView= {isInView} HeaderString="What can I use?" Index="02." setHeaderAnimated={handleSetAnimated}/>
