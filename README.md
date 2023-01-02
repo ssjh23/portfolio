@@ -3,6 +3,7 @@
 
 > Hello! This is my portfolio website and also what I consider to be my first personal coding project. While it definitely is far from being the most well-designed ( Code and Aesthetic wise :") ), I have learned quite a bit of Frontend tools and will write things that I think could have been done better further down in this README, something like a post-project reflection <br><br>
 > You are free to fork this repo and make any modifications ( ._.):+1:, just give credit when credit is due. For this project, the design itself I have taken inspiration from another project which I will give credit below, but code-wise I wrote it all from scratch ( No component templates )
+> Any suggestions for improvement is really really much appreciated. Just raise and issue and I will take a look at it
 
 ## How to run 
 ```
