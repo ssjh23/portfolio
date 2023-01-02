@@ -76,7 +76,7 @@ export default function Contact () {
                   //this will save the file as "your_cv.pdf"
                   download="Resume Sean Soo"
                   //put the path of your pdf file
-                  href="src/assets/Sean_Soo_-_Software_Engineer_Intern.pdf"
+                  href="/Sean_Soo_-_Software_Engineer_Intern.pdf"
                 >
                     
                     <motion.button 
