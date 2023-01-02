@@ -20,7 +20,7 @@ function App() {
 }
   return (
     <BrowserRouter>
-    <div className='snap-y snap-mandatory h-screen w-screen overflow-scroll scroll-smooth'>
+    <div className='snap-y snap-mandatory h-screen overflow-auto scroll-smooth'>
       <HeroSection isRenderOtherPages={isSVGComplete}/>
       {renderOtherPages &&
           <div className='grid grid-cols-7 '>
