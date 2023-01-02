@@ -18,11 +18,10 @@ export default function About () {
    }
    const sidebarVariants: Variants = {
     hidden_x_img:{
-        x: "+100vh", 
+       
         opacity: 0
     },
     visible_x_img:{
-        x:0, 
         opacity: 1,
         transition: {
             delay:1,
