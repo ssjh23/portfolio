@@ -5,6 +5,7 @@ import { usePageStore } from "../store"
 
 export default function About () {
     const [headerAnimated, setHeaderAnimated] = useState(false)
+    const [hovered, setHovered] = useState(false)
     const ref = useRef(null)
     const isInView = useInView(ref, {
         margin: "-100px"
@@ -80,13 +81,12 @@ export default function About () {
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
                 <motion.img 
-                    src="https://www.landedexperts.com/wp-content/uploads/2019/07/placeholder-m.jpg"
-                    className="grid row-start-3 xl:col-start-2 justify-center items-center xl:mt-12 xl:mr-20 h-40 sm:h-52 lg:h-60 xl:h-3/6 2xl:h-4/6 "
-                    initial={"hidden_x_img"}
-                    animate={isInView && "visible_x_img"}
-                    variants={sidebarVariants}>
-
-                </motion.img>
+                    src={hovered ? 'src/assets/ProfilePic.jpg' : 'src/assets/TintedProfilePic.jpg'} 
+                    className="grid row-start-3 xl:col-start-2 justify-center items-center self-center w-2/6 xl:w-1/2 xl:mt-12 xl:mr-20 "
+                    whileHover={{scale:1.2}}
+                    onHoverStart={() => setHovered(true)}
+                    onHoverEnd={() => setHovered(false)}
+                ></motion.img>
 
             </>
 
