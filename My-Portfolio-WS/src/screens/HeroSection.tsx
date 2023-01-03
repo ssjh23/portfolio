@@ -2,6 +2,7 @@ import { motion, useInView, Variants, useMotionValue, useTransform, animate} fro
 import { useEffect, useRef, useState } from "react"
 import { HashLink } from "react-router-hash-link"
 import HeroSectionSVG from "../components/HeroSectionSVG"
+
 import { usePageStore } from "../store"
 
 interface P{

@@ -38,7 +38,6 @@ export default function Skills () {
    const isTabletOrMobile = useMediaQuery({
     query: '(max-width: 1280px)'
    })
-   console.log(isTabletOrMobile)
    const skillVariants: Variants = {
     hidden:{
         opacity: 0

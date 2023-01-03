@@ -14,9 +14,6 @@ export default function AnimatedHashLink ({ LinkName, id }:Label) {
     [state.currentPage]
    )
     
-   useEffect(()=> {
-    console.log(currentPage < id+1)
-   },[currentPage])
     return (
         <>
         {id !== 0 &&
