@@ -81,7 +81,7 @@ export default function About () {
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
                 <motion.img 
-                    src={hovered ? 'src/assets/ProfilePic.png' : 'src/assets/TintedProfilePic.png'} 
+                    src={hovered ? 'src/assets/ProfilePic.png' : '/assets/TintedProfilePic.png'} 
                     className="grid row-start-3 xl:col-start-2 justify-center items-center self-center w-2/6 xl:w-1/2 xl:mt-12 xl:mr-20 "
                     whileHover={{scale:1.2}}
                     onHoverStart={() => setHovered(true)}
