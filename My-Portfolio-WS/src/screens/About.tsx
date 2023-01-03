@@ -72,12 +72,12 @@ export default function About () {
                     variants={sidebarVariants}
                 >
                     Hello! My name is Sean Soo and I enjoy making things work with code. Making an Android phone app, working with an Arduino to make a simple RC Robot or building a website, I have tried it all! And 
-                    each experience has made me enjoy appreciate my field more.
+                    each experience has made me  appreciate my field more.
                     <br></br><br></br>
                     "Learn Smart, Learn Fast" is my own personal motto. It is a reminder that in the ever-changing field of Software Engineering, continuous adaptation (Fast) while maintaining quality (Smart) is key. True to the cliche, the journey
                     is just as important as the destination
                     <br></br><br></br>
-                    In school, I am moving to my specialisation, Internet Of Things and Cloud Computing.
+                    In school, I am moving on to my specialisation, Internet Of Things and Cloud Computing.
                     If I'm not studying or coding, I'm an avid gamer of all genres.
                 </motion.div>
                 <motion.img 
