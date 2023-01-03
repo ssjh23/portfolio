@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/ssjh23/portfolio/compare/v0.0.6...v0.0.7) (2023-01-03)
+
+
+### Features
+
+* Added profile picture ([c6acd9e](https://github.com/ssjh23/portfolio/commit/c6acd9e46c449c3a0b810e4013afe2cd910efaa9))
+
+
+### Bug Fixes
+
+* changed overflow-auto to remove bottom scroll ([2e4135a](https://github.com/ssjh23/portfolio/commit/2e4135a7252a6426bf506b5423dacaadf67af6e5))
+* Changed path of pdf ([fe79413](https://github.com/ssjh23/portfolio/commit/fe794136e094389ab48755a5945c7991a43cd388))
+* Changed Skills to full screen ([66dab02](https://github.com/ssjh23/portfolio/commit/66dab0275cc98fbff1049eac4d3ef3f9323ac00c))
+* text fix ([e463e6d](https://github.com/ssjh23/portfolio/commit/e463e6d7c0a8aa059f741cc8d4bbc2f6829468b8))
+* Transition header change ([b11319e](https://github.com/ssjh23/portfolio/commit/b11319ecac01ab019a8804ab6c453bcf791a78a7))
+* Transition header change ([d2af4be](https://github.com/ssjh23/portfolio/commit/d2af4be70a0aa30f49c2bb19f3c5dcb42fc85305))
+
 ### [0.0.6](https://github.com/ssjh23/portfolio/compare/v0.0.5...v0.0.6) (2023-01-01)
 
 
